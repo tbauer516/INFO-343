@@ -1,0 +1,73 @@
+.btn {
+    background-color: #FFFFFF;
+}
+
+#colR {
+    text-align: right;
+}
+
+.description {
+    width: 45%;
+    text-align: left;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+}
+
+.error {
+    display: none;
+}
+
+form > input {
+    margin-bottom: 10px;
+}
+
+img {
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.loading-box {
+    text-align: center;
+}
+
+.loading-icon {
+    margin: 50%;
+    color: white;
+    font-size: 50px;
+}
+
+#parse-error {
+    display: none;
+}
+
+.row-body, #main-body, #title {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    background-color: #d9d9d9;
+}
+
+.row-body i {
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#review-form input, #review-form textarea {
+    width: 75%;
+}
+
+.review-star {
+    font-size: 10px;
+    cursor: default;
+}
+
+#star {
+    padding-bottom: 5px;
+}
+
+#title {
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+<div class="container-fluid header header-order">
+	<h1 id="headertext">Dawg Coffee</h1>
+	<p id="motto">Supplying Sleepy Huskies Since 2015</p>
+</div>
+
+<div class="container">
+	<div class="row order-item bean-info">
+		<div class="col-xs-12 col-sm-6">
+			<h2>{{product.name}}</h2>
+			<img class="hidden-xs" ng-src="{{product.image}}" alt="image of coffee bean">
+			<p>{{product.description}}</p>
+			<h2>About The Grower</h2>
+			<img class="hidden-xs" ng-src="{{product.grower.image}}" alt="image of the grower of the bean">
+			<p>{{product.grower.description}}</p>
+			<a ng-href="{{product.grower.externalUrl}}">Link to their website</a>
+		</div>
+		<div class="col-xs-0 col-sm-1"></div>
+		<div class="col-xs-12 col-sm-5 order-box">
+			<h2>Purchase {{product.name}}</h2>
+			<form name="orderForm" class="order-form">
+				<p>{{product.price | currency:"$":2}} per pound</p>
+				<label for="quantity">Quantity:</label>
+				<input name="quantity" type="number" max="10" min="1" ng-model="quantity" autocomplete="off" required>
+				<br>
+				<label for="grind">Grind:</label>
+				<select name="grind" ng-model="grindName" required>
+					<option ng-repeat="grind in product.categories" value="{{grind}}">{{grind | capitalize}}</option>
+				</select>
+				<br>
+				<button class="btn btn-default" name="add" ng-click="CartService.addToCart(product.name, grindName, quantity, product.price)" ng-disabled="orderForm.$invalid">Add to cart</button>
+			</form>
+		</div>
+	</div>
+</div>

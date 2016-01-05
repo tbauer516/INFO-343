@@ -1,0 +1,53 @@
+.found li, #list li {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #DEDEDE;
+}
+
+li {
+	list-style: none;
+}
+
+.loginDiv {
+	display: inline;
+	margin-left: 15px;
+	border: 1px solid #FF1309;
+	border-radius: 5px;
+	background-color: #FFC7C2;
+	color: #FF1309;
+	padding: 5px;
+}
+
+#main {
+	padding-top: 60px;
+}
+
+#nav {
+	background-color: black;
+	padding: 10px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	height: 54px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+ul {
+	padding: 0px;
+}
+
+#user {
+	margin-left: 5px;
+	display: inline-block;
+	color: white;
+	margin-top: 7px;
+}

@@ -1,0 +1,38 @@
+<div ng-controller="TodoCtrl">
+    <div class="sidebar-margin">
+        <button type="button" class="pane-head btn btn-default" data-ng-click="panels.close();">
+            <i class="fa fa-times fa-lg"></i>
+        </button>
+        <a ui-sref="home">
+            <button class="menu btn btn-default" data-ng-click="panels.close();">Home</button>
+        </a>
+        <a ui-sref="edit">
+            <button class="menu btn btn-default" data-ng-click="panels.close();">Create New</button>
+        </a>
+    </div>
+    <div class="panel">
+        <h1 class="feed-title">NotesFeed</h1>
+        <div class="searchBar sidebar-margin">
+            <i class="fa fa-search"></i>
+            <input name="all" placeholder="  Search" id="search" ng-model="searchAll">
+        </div>
+        <div class="menu-notes container-fluid" ng-repeat="item in list | orderBy: '-time' | filter: searchAll">
+            <div class="note" ng-if="item.private == false">
+                <div class="row">
+                    <div class="pointer col-xs-10 col-sm-9">
+                        <h3 ng-click="enlarge(list.$indexFor(list.$keyAt(item)));panels.close();">{{item.title}}</h3>
+                    </div>
+                    <div class="icon col-xs-2 col-sm-3">
+                        <a ui-sref="re-edit({id: list.$indexFor(list.$keyAt(item))})" ng-show="userName == item.author"><i class="delete edit fa fa-pencil-square-o fa-lg" ng-click="panels.close()"></i></a>
+                        <a><i class="delete fa fa-trash fa-lg" ng-click="delete(item)" ng-show="userName == item.author"></i></a>
+                    </div>
+                </div>
+                <h6>By: {{item.author}}</h6>
+                <hr>
+                <!-- <div ng-bind-html="renderHtml(item.body)"></div> -->
+                <p>Tags: <span class="tags">{{item.tagText}}</span></p>
+                <footer ng-bind="item.timeF = formatTime(item.time)"></footer>
+            </div>
+        </div>
+    </div>
+</div>

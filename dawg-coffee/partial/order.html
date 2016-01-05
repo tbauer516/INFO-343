@@ -1,0 +1,22 @@
+<div class="container-fluid header header-order">
+	<h1 id="headertext">Dawg Coffee</h1>
+	<p id="motto">Supplying Sleepy Huskies Since 2015</p>
+</div>
+
+<div class="container">
+	<form class="searchForm" name="searchForm">
+		<input name="searchTerm" ng-model="filter" placeholder="Search...">
+	</form>
+</div>
+
+<div class="container">
+	<div class="row no-margin">
+		<div class="col-xs-12 col-sm-4" ng-repeat="product in products | orderBy: 'name' | filter: filter">
+			<div class="order-item">
+				<h2><a class="orange" ui-sref="detail({id: product.id})">{{product.name}}</a></h2>
+				<p>{{product.description}}</p>
+				<p>Price: {{product.price | currency:"$":2}}</p>
+			</div>
+		</div>
+	</div>
+</div>

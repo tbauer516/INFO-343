@@ -1,0 +1,32 @@
+<head>
+</head>
+<div class="container">
+    <div class="top-margin">
+        <!--<h2>Add Note</h2>-->
+        <form name="newList">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="title" placeholder="Enter a title for your note" name="title" class="form-control" id="title" ng-model="title" required></input>
+                <p class="help-block small" ng-show="newList.title.$invalid && newList.title.$touched">Please include a title</p>
+            </div>
+            <!-- Tagging format -->
+            <div class="form-group">
+                <label for="tags">Tags</label>
+                <div data-ng-repeat="(key, tag) in inputTags" class="input-tag"> {{ tag.name }}
+                </div>
+                <input type="text" name="tags" placeholder="Separate tags with spaces" class="form-control" id="tags" data-ng-model="tagText" data-new-tag="addTag()" required>
+                <p class="help-block small" ng-show="newList.tags.$invalid && newList.tags.$touched">Please include at least one tag</p>
+            </div>
+            <div class=" form-group ">
+                <label for="content ">Content</label>
+                <textarea ui-tinymce="tinymceOptions" ng-model="body" rows="4" cols="50" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="private" id="private" ng-model="private">
+                <label for="private">Private</label>
+            </div>
+            <a ui-sref="home"><button ng-click="newNote()" id="add" class="btn btn-primary" type="button" ng-hide="id" ng-disabled="newList.$invalid || userName == undefined">Add</button></a>
+            <a ui-sref="home"><button ng-click="editNote()" id="edit" class="btn btn-primary" type="button" ng-show="id" ng-disabled="newList.$invalid">Save</button></a>
+        </form>
+    </div>
+</div>

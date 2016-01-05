@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Token: 
+    pk.eyJ1IjoidGJhdWVyNTE2IiwiYSI6ImNpZm81NDBxODRiaW5zaWtxMXBpbDhlb3MifQ.9k3rGZvcs_T6ooPDwpaKNQ
+    -->
+
+    <meta charset="utf-8">
+
+    <!-- viewport declaration for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page information -->
+    <meta name="description" content="...page description...">
+    <meta name="author" content="Tyler Bauer">
+    <title>Police Shootings</title>
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Leaflet stylesheet -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+
+    <!-- your stylesheet -->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- page icon -->
+    <link rel="icon" href="img/page-icon.png"/></head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div id="map-container"></div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <!-- <div id="statbox" class="container"> -->
+                    <h1>Map of Police Shootings</h1>
+                    <p>This map is the result of a crowdsourced police shooting data collected by <a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202">Deadspin</a></p>
+                    <p>Dots represent an incident where a person was shot with some dots representing <span id="male">males</span>, <span id="female">females</span> and <span id="unknown">unknown genders</span>.</p>
+                    <p>
+                        Number of current people shown on map:<br><br><span id="cTotal"></span>
+                    </p>
+                    <p>
+                        Percentage of current male victims killed:<br><br><span id="mkill"></span>
+                    </p>
+                    <p>
+                        Percentage of current female victims killed:<br><br><span id="fkill"></span>
+                    </p>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MORE HTML GOES HERE -->
+
+
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Leaflet library -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+
+    <!-- your script file -->
+    <script src="js/app.js"></script>
+</body>
+</html>

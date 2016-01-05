@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- viewport declaration for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- page information -->
+    <meta name="description" content="Review page for \"The Last Wish\"">
+    <meta name="author" content="Tyler Bauer">
+    <title>The Last Wish Reviews</title>
+    <link rel="shortcut icon" href="img/medallion.png">
+
+    <!-- Bootstrap CSS library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Raty CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Raty FA CSS library -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/latest/css/font-awesome.css" rel="stylesheet">
+
+    <!-- My Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="parse-error" class="alert alert-danger" role="alert"></div>
+
+    <!-- Main Page HTML Content -->
+    <div id="main" class="container-fluid">
+        <div id="title" class="container">
+            <h1>The Last Wish</h1>
+            <div class="img-div container">
+                <img src="img/thelastwishwide.jpg" alt="Book Cover of The Last Wish">
+            </div>
+            <div id="average"></div>
+            <p class="description">Geralt of Rivia is a witcher. A cunning sorcerer. A merciless assassin.<br><br>
+            And a cold-blooded killer.<br><br>
+            His sole purpose: to destroy the monsters that plague the world.<br><br>
+            But not everything monstrous-looking is evil and not everything fair is good. . . and in every fairy tale there is a grain of truth.</p>
+        </div>
+
+        <div id="main-body" class="container">
+            <h2>New Review</h2>
+            <form id="review-form">
+            <div id="star"></div>
+            <input type="text" id="review-title" placeholder="Review Title" maxlength="50" autocomplete="off">
+            <br>
+            <textarea id="review-body" rows="4" cols="150" placeholder="Review description..."></textarea>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="review-list"></div>
+    </div>
+
+
+    <!-- Bootstrap Modal -->
+    <!-- Does not display on main page -->
+    <div id="login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login to post a review:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="error alert"></div>
+                    <form id="login-form">
+                        <h2>Log In</h2>
+                        <input type="text" id="login-username" placeholder="Username" />
+                        <input type="password" id="login-password" placeholder="Password" />
+                        <button type="submit">Log In</button>
+                    </form>
+                    <form id="signup-form">
+                        <h2>Sign Up</h2>
+                        <input type="text" id="signup-username" placeholder="Username" />
+                        <input type="password" id="signup-password" placeholder="Create a Password" />
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Bootstrap Modal -->
+    <!-- Does not display on main page -->
+    <div id="loading" class="modal fade" role="dialog">
+        <div class="modal-dialog loading-box">
+
+            <!-- Modal content-->  
+            <i class="fa fa-refresh fa-spin loading-icon"></i>
+        </div>
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- jQuery Raty Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Parse.com library -->
+    <script src="https://www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+
+    <!-- My Javascript File -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>

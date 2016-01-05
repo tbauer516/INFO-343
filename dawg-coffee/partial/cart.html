@@ -1,0 +1,46 @@
+<div class="container-fluid header header-order">
+	<h1 id="headertext">Dawg Coffee</h1>
+	<p id="motto">Supplying Sleepy Huskies Since 2015</p>
+</div>
+
+<div class="container order-item bean-info">
+	<h2 class="left">My Cart</h2>
+	<table>
+		<tr>
+			<th>Item</th>
+			<th>Grind</th>
+			<th>Quantity</th>
+			<th>Unit Price</th>
+			<th>Total Price</th>
+			<th></th>
+		</tr>
+		<tr ng-repeat="item in CartService.shoppingCart | orderBy: 'grind' | orderBy: 'name'">
+			<td>{{item.name}}</td>
+			<td>{{item.grind | capitalize}}</td>
+			<td>
+				<button class="btn btn-default" ng-click="minus(item.index)"><i class="fa fa-minus"></i></button>
+				{{item.quantity}}
+				<button class="btn btn-default" ng-click="plus(item.index)"><i class="fa fa-plus"></i></button>
+			</td>
+			<td>{{item.price | currency:"$":2}}</td>
+			<td>{{item.quantity * item.price | currency:"$":2}}</td>
+			<td><button class="btn btn-default" ng-click="delete(item.index)"><i class="fa fa-times"></i></button></td>
+		</tr>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th>Grand Total</th>
+			<th>{{CartService.total() | currency:"$":2}}</th>
+			<th></th>
+		</tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<button class="btn btn-default" ng-click="purchase()">Purchase</button>
+			</td>
+	</table>
+</div>

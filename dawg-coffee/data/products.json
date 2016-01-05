@@ -1,0 +1,114 @@
+[
+  {
+    "id": "espresso-blend",
+    "name": "Espresso Blend",
+    "description": "Thick and rich with hints of currant, chocolate, and cinnamon. Or whatever we are using to make espresso that week.",
+    "image": "img/beans/espresso.jpg",
+    "price": 14,
+    "categories": ["blends", "dark roast", "espresso"],
+    "grower": {
+      "name": "La Petisa",
+      "description": "The farm La Petisa is located in Llano Bonito de Naranjo, West Valley, Costa Rica. It's along the road you take from the West Valley to Helsar de Zarcero mill, where this and many other coffees are processed from fruit to green bean form. The reason we turn to Helsar for coffee, and the reason the local farmers deliver their coffee fruit there, is that they are excellent at processing coffee from fruit to dried pergamino to ready-to-export green coffee beans. Each year they refine their process, and under the guidance of Ricardo Perez Barrantes the recent improvements include more raised drying beds, more warehouse space to rest coffee (reposo) and new dry milling equipment. La Petisa is run by Nancy Barrera Moralesl it is 3.5 hectares planted in Caturra, ranging from 1500 to 1750 meters. Coffee is her main source of income, though she also has three incredibly cute cottages on her farm that she rents to vacationers...and maybe next to coffee buyers too!",
+      "image": "img/growers/la-petisa.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/costa-rica-helsar--la-petisa"
+    }
+  },
+  {
+    "id": "roasters-choice",
+    "name": "Roaster's Choice",
+    "description": "A delicious medium-bodied blend of beans from around the world, or whatever we have left over after we sell the other stuff.",
+    "image": "img/beans/roasters.jpg",
+    "price": 13.5,
+    "categories": ["blends"],
+    "grower": {
+      "name": "Finca Alaska",
+      "description": "Los Crestones is an area of unique rocky outcroppings in the area of the Chirripó National Park, a zone called La Piedra de Rivas. It is also a minor region of coffee production adjacent to the parklands, in quite a different zone than the major areas one might be familiar with; Tarrazu, Central Valley, or the Western Valley regions. This lot was a 2014 crop selection from the farm, 'Finca Alaska', that is very unique considering its 'off-the-radar' location on the slopes of the country's highest peak, Chirripo. Finca Alaska is actually made up of several small plots of land dotting the hillside - Duranos, La Cima, Montinales, Aguacate, and a few others, including El Llano. Los Crestones micro-mill is run by a coffee producer group, sharing mill, drying patios, and a newly purchased dry-mill (allowing them to re-use parchment skin) but each farm processes their coffees separately. Finca Alaska is owned by Asdrubal Acuña Hernández, one of the founding members of the group. This lot is from right around 1700 meters and almost solely planted in Caturra.",
+      "image": "img/growers/finca-alaska.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/costa-rica-alaska-lote-el-llano"
+    }
+  },
+  {
+    "id": "captain-ballards-blend",
+    "name": "Captain Ballard's Blend",
+    "description": "A classic fisherman's roast: dark, bitter, with a pinch of salt. Great for a French press.",
+    "image": "img/beans/ballards.jpg",
+    "price": 13,
+    "categories": ["blends", "dark roast"],
+    "grower": {
+      "name": "Camiseta Estate",
+      "description": "This coffee is from Camiseta Estate in the Boquete region of Panama. Boquete is located in the lush mountain highlands of Panama, along the Caldera river (aptly named 'Caldera', a type of volcano, and runs through Boquete and Volcan Baru National Park - that's the volcano in the background of the first pic). Boquete itself sits at about 1200 meters, and the soft slopes of Baru Volcano (not to mention nutrient rich soil) provide prime coffee growing conditions. Camiseta is one of a group of estates owned and operated by a single family in the region. The altitudes range from a low of 1300 to right around 2000 meters above sea level. 80% of the trees planted are older Typica varieties.",
+      "image": "img/growers/camiseta.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/panama-boquete-camiseta-estate"
+    }
+  },
+  {
+    "id": "frech-roast",
+    "name": "French Roast",
+    "description": "Dark and luxurious, refined and powerful. Sip this while watching French existential films, or use it to clean your engine.",
+    "price": 13.50,
+    "image": "img/beans/frenchroast.jpg",
+    "categories": ["blends", "dark roast"],
+    "grower": {
+      "name": "Don Vasquez",
+      "description": "This coffee is from the farm of Don Marel Vasquez, who's been farming coffee in the region for more than 10 years now. Ocotepeque is in the southwest corner of Honduras, bordering Guatemala and El Salvador, and has a rich history in coffee farming. The mountain ranges in this region provide altitude, microclimates, and rich volcanic soil that are ideal for farming coffee. This particular farm rests at the foothills of the Celaque National Park and mountain range at 1650 meters above sea level. Don Vasquez's farm is planted in Caturra with a little Catuai mixed in. He fully washes his coffee using an ecopulper, then sun-drying on patios. The green coffee is hand-sorted, which is ideal for removing defects that make it through the milling process.",
+      "image": "img/growers/don-vasquez.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/honduras-belen-de-ocotepeque-don-vasquez"
+    }
+  },
+  {
+    "id": "sumatran",
+    "name": "Sumatran",
+    "description": "Full bodied, spicy with a hint of nuts and syrup. The favorite of tigers the world over.",
+    "price": 14,
+    "image": "img/beans/sumatran.jpg",
+    "categories": ["varietals"],
+    "grower": {
+      "name": "Buah-Buahan",
+      "description": "The flavor of Sumatra coffees result from how the coffee is processed, and to a lesser degree the types of coffee varieties planted. Sumatra coffees were once dry-processed, where the cherry is picked from the tree, laid out to dry, and then hulled to green bean in one step. This never worked well because the climate is so wet during the harvest in Sumatra, and rather unpredictable too. So now most Sumatra coffees are wet-hulled (called Giling Basah). Processing starts on the small-holder farms, where they pick the coffee and pulp off the fruit skin in a hand-crank machine. Then most farmers ferment the coffee in small containers to break down the fruity mucilage layer, others simply leave the bags of cherry intact overnight and pulp in the morning. Then they dry the coffee for a few hours on tarps or concrete, and sell it in the local market to coffee collectors. The collectors might dry the coffee a little more, but it is still exceptionally wet when they hull it (hence the term wet-hulled. This wet-hulling is not done anywhere else in the coffee world. The collector then puts the wet, soft green bean (called Kopi Labu, or pumpkin coffee) out on the tarps or concrete to dry. That's another unique aspect of Sumatra processing; nowhere else is the green bean exposed directly to the elements to dry. But in this wet climate, hulling off the outer parchment layer so soon makes the coffee dry much faster, and allows the collector to get it dried down to 14% moisture and sell the coffee to an exporter much sooner than other processing methods. The name Buah-Buahan signifies a cornucopia of fruit, and that is what we find in this coffee, as well as complex rustic notes and the characteristic low acidity.",
+      "image": "img/growers/buah-buahan.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/sumatra-organic-buahbuahan"
+    }
+  },
+  {
+    "id": "ethiopian",
+    "name": "Ethiopian",
+    "description": "Medium bodied with hints of chocolate, dark berries, and spice. Quite possibly the best coffee in the world. Seriously",
+    "price": 14.5,
+    "image": "img/beans/ethiopian.jpg",
+    "categories": ["varietals"],
+    "grower": {
+      "name": "Duromina Cooperative",
+      "description": "This coffee from Duromina Cooperative is part of an initiative Sweet Maria has in Ethiopia to work direct at the coop level. They have been involved with Duromina for the past 5 years, selecting their favorite lots to offer on their site. Duromina was formed with the help of a non-government organization that not only coordinated agronomists and managers for each of the coops they work with, but also had a business adviser assigned that helped the cooperative manage their debt, re-invest in quality improvements at the mill, and verifies distribution of income to all members. This is a key position; Sweet Maria has never known a coop to get this kind of expert advice from outside... not in Africa at least. A cooperative can make all kinds of quality improvements, turn out fantastic coffee, and sink deeper in debt all the while. Cooperatives often fail to return a fair and full amount of payment to their farmer-members. Often this is from poor management, and sometimes from graft as well. Duromina has now 'graduated' from the NGO program and operates independently with the oversight of various farmer-member leadership groups. Duromina is in the Goma region of Agaro Woreda, with farm altitudes between 1900 to 2100 meters. The name, chosen by the farmers, has quite a straight-forward meaning: it roughly translates as 'Make More Money!' NPR did an interesting audio piece on this coop: http://www.npr.org/blogs/thesalt/2013/07/22/202969075/ETHIOPIAN-COFFEE-CINDERALLA-STORY",
+      "image": "img/growers/duromina.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/ethiopia-agaro-duromina-cooperative"
+    }
+  },
+  {
+    "id": "premium-java",
+    "name": "Premium Java",
+    "description": "Earthy and and rich with hints of herbs, from the Indonesian island whose name has become synonymous with coffee.",
+    "price": 14,
+    "image": "img/beans/premium.jpg",
+    "categories": ["varietals"],
+    "grower": {
+      "name": "Gunung Parigi",
+      "description": "This coffee is a regional blend from the mountain of Parigi, made up of small lots from villages surrounding different mountain peaks in West Java ('Gunung' refers to the very top of the mountain). An intermediary works closely with local farmers in West Java, wet-processing coffee in small batches to high standards. Java Sunda (West Java) was the original coffee area, but you would find few trees here of late. Most Java coffee is grown in the East, where the big estates are. But farmers in Java Sunda always kept small coffee plots, although they mainly grown rice, onions, cabbage, carrots and other food crops for local markets in Bandung and Jakarta. Here amongst the Ateng and Jember coffees are some old Typica trees, the original Typica, which is quite amazing. (Java was the first destination for coffee from Yemen, with a stopover in India).",
+      "image": "img/growers/parigi.jpg",
+      "externalUrl": "https://www.sweetmarias.com/product/java-sunda-gunung-parigi"
+    }
+  },
+  {
+    "id": "kona",
+    "name": "Kona",
+    "description": "The classic Hawaiian coffee from the steep slopes of Mauna Loa. Crazy expensive because it's awesome.",
+    "image": "img/beans/kona.jpg",
+    "price": 25,
+    "categories": ["varietals", "luxury"],
+    "grower": {
+      "name": "Ka'anapali Maui Mokha",
+      "description": "The Kaanapali Estate is approximately 4 miles north of Lahaina directly above the Kaanapali resort. The farm is originally a part of the Pioneer Mill sugar plantation, which diversified the land out of sugar cane into coffee in 1988. Pioneer Mill had been farming the land since 1860.\nPioneer Mill, in researching the feasibility of raising coffee on different elevations and differing environmental conditions, a number of arabica varieties were put out in field trials to determine if there would be a significant difference in cup quality grown under West Maui conditions. The outcome of this trial resulted in the planting of four varieties that produced superior coffee quality specific for this region.\nThis finding allowed the founding of Kaanapali Estate Coffee, Inc. The only recognized Maui coffee farm that eventually grew to 500 acres planted to those four varieties: Red Catuai, Yellow Caturra, Typica and the soon to be renowned Moka variety. The customer base grew over the years as the trees matured being the only Maui origin coffee available. Roasters and Coffee houses were embracing the Hawaiian coffee story, choosing to create Hawaiian blends along side the more traditionally recognized Kona origin coffees.\nAs a corporate agricultural operation, whose original business intent was to replace sugar cane dollar for dollar, it became evident that the market could not support such a large cost infrastructure supported by a large administrative staff. The costs to break even were well above what the general market would accept. In October of 2001, Kaanapali Estate Coffee closed choosing to keep the trees alive by continued irrigation but without any general maintenance.\nIn an agreement with landowner, a lease of the land was secured in an attempt to resurrect these mature coffee trees to full productive status with proper attention being paid to the stewardship of the land. This effort resulted in the forming of MauiGrown Coffee, Inc. and the new birth of Maui Coffee as an origin.",
+      "image": "img/growers/kaanapali.jpg",
+      "externalUrl": "http://www.mauigrowncoffee.com/mgc/"
+    }
+  }
+]

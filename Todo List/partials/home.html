@@ -1,0 +1,25 @@
+<form name="noteSearch" class="row form-inline top-margin">
+    <!-- Note search filter-->
+    <div class="searchBar">
+        <i class="fa fa-search"></i>
+        <input name="notes" placeholder="Filter Your Notes" id="search" ng-model="searchNotes">
+    </div>
+</form>
+<div ng-repeat="item in list | orderBy: '-time' | filter:searchNotes" ng-if="userName == item.author">
+    <div class="note">
+        <div class="row">
+            <div class="col-xs-10 col-sm-9">
+                <h2>{{item.title}}</h2>
+            </div>
+            <div class="icon col-xs-2 col-sm-3">
+                <a ui-sref="re-edit({id: list.$indexFor(list.$keyAt(item))})"><i class="delete edit fa fa-pencil-square-o fa-lg"></i></a>
+                <i class="delete fa fa-trash fa-lg" ng-click="delete(item)"></i>
+            </div>
+        </div>
+        <div ng-bind-html="renderHtml(item.body)"></div>
+        <hr>
+        <p>Tags: <span class="tags">{{item.tagText}}</span></p>
+        <footer ng-bind="item.timeF = formatTime(item.time)"></footer>
+        <footer ng-bind="formatPrivate(item.private)"></footer>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h3 class="modal-title">Login or Create an Account!</h3>
+</div>
+<div class="modal-body">
+    <div class="error alert alert-danger" ng-show="loginError">
+        {{loginError}}
+    </div>
+    <div>
+        <form class="loginForm" name="loginForm">
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email" name="email" size="35" ng-model="email">
+            <br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" size="35" ng-model="password">
+        </form>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok('login')">Log In</button>
+    <button class="btn btn-primary" type="button" ng-click="ok('signup')">Sign Up</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

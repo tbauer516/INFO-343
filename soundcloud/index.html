@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Tyler Bauer">
+    <meta name="description" content="Simple list maker for soundcloud sounds">
+
+    <title>SoundCloud List</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- include libraries -->
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="MyCtrl"> <!-- specify app -->
+
+    <div id="nav" class="container-fluid">
+            <button class="btn btn-default" ng-hide="user.username != undefined" ng-click="login()">Login</button>
+            <div id="user" ng-show="user.username != undefined">
+                Logged in as: {{user.username}}
+            </div>
+    </div>
+
+    <div id="main" class="container">
+        <form name="trackForm" autocomplete="off" ng-keyup="search(trackForm.$valid)" novalidate>
+            <div class="form-group" ng-class="{'has-error' : trackForm.$invalid, 'has-success' : trackForm.$valid}">
+                <label>SoundCloud search:</label>
+                <!-- bind the search term to the controller -->
+                <input id="search" name="search" placeholder="Search for a track..." ng-model="query" class="form-control" required>
+            </div>
+        </form>     
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-6">
+                <div ng-if="trackForm.$valid"> <!-- only show results if form is valid -->
+                    <p>Tracks found:</p>
+                    <ul class="found">
+                        <li class="{{track.id}}" ng-repeat="track in tracks" ><p ng-hide="currentSong == track.id"><a ng-click="player(track, track.id)" href="">
+                            {{track.title}}</a> by {{track.user.username}}</p>
+                            <div ng-show="currentSong == track.id">
+                                <div id="{{track.id}}"></div>
+                                <br>
+                                <button class="btn btn-default" ng-click="addToList(track)">Add to list</button>
+                                <div class="loginDiv" ng-hide="user.username != undefined">
+                                    Please Login to Favorite and Follow
+                                </div>
+                                <button ng-show="user.username != undefined" class="btn btn-default" ng-click="favorite(track)">Add to favorites</button>
+                                <button ng-show="user.username != undefined" class="btn btn-default" ng-click="follow(track)">Follow artist</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                <div id="list-div">
+                    <p ng-show="listSize()">Current list:</p>
+                    <ul id="list">
+                        <li ng-repeat="song in songList">
+                            <div ng-bind-html="song.player.html">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- end container -->
+    <script src="js/app.js"></script>
+</body>
+</html>

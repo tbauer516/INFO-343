@@ -1,0 +1,16 @@
+<div class="note" ng-controller="TodoCtrl">
+    <div class="row">
+        <div class="col-xs-10 col-sm-9">
+            <h2>{{item.title}}</h2>
+        </div>
+        <div class="icon col-xs-2 col-sm-3">
+            <a ui-sref="re-edit({id: itemID})" ng-show="userName == item.author"><i class="delete edit fa fa-pencil-square-o fa-lg" ng-click="cancel()"></i></a>
+            <a><i class="delete fa fa-trash fa-lg" ng-click="delete(list[itemID]);cancel();" ng-show="userName == item.author"></i></a>
+            <a><i class="fa fa-times" ng-click="cancel()"></i></a>
+        </div>
+    </div>
+    <div ng-bind-html="renderHtml(item.body)"></div>
+    <hr>
+    <p class="tags">Tags: {{item.tagText}}</p>
+    <footer>{{formatTime(item.time)}}</footer>
+</div>

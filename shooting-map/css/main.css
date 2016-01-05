@@ -1,0 +1,19 @@
+#map-container {
+	height: 100vh;
+}
+
+#male {
+    color: blue;
+}
+
+#female {
+    color: red;
+}
+
+#unknown {
+    color: green;
+}
+
+p {
+	border-top: 2px solid gray;
+}
