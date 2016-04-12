@@ -219,7 +219,7 @@ $folders = scandir(dirname(__DIR__));
 	for ($i = 0; $i < $folders.length; $i++) {
 		if (is_dir($folders[$i])) {
 			?>
-			<a href="<?=$folders[$i]?>/index.html"><li><?=$folders[$i]?></li></a>
+			<li><a href="<?=$folders[$i]?>/index.html"><?=$folders[$i]?></a></li>
 			<?php
 		}
 	}
