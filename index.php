@@ -208,7 +208,7 @@ line-height: 1.4;
 
 <?php
 
-$folders = scandir('.');
+$folders = scandir(dirname(__DIR__));
 
 ?>
 
