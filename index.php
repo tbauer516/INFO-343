@@ -212,7 +212,7 @@ line-height: 1.4;
 <?php
 	$folders = scandir(__DIR__);
 	for ($i = 0; $i < count($folders); $i++) {
-		if (is_dir($folders[$i]) && strpos($folders[$i], '.') !== false) {
+		if (is_dir($folders[$i]) && !(strpos($folders[$i], '.') !== false)) {
 			?>
 			<li><a href="<?php echo $folders[$i] ?>/index.html"><?php echo $folders[$i] ?></a></li>
 			<?php
