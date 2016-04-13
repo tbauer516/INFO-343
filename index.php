@@ -210,11 +210,11 @@ line-height: 1.4;
 <ul id="directory">
 
 <?php
-	$folders = scandir(dirname(__DIR__));
+	$folders = scandir(__DIR__);
 	for ($i = 0; $i < count($folders); $i++) {
 		if (is_dir($folders[$i])) {
 			?>
-			<li><a href="<?=$folders[$i]?>/index.html"><?=$folders[$i]?></a></li>
+			<li><a href="<?php echo $folders[$i] ?>/index.html"><?php echo $folders[$i] ?></a></li>
 			<?php
 		}
 	}
