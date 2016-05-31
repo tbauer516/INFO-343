@@ -206,7 +206,6 @@ line-height: 1.4;
 </head>
 <body>
 
-<<<<<<< HEAD
 <h1>Directory</h1>
 <ul id="directory">
 
@@ -223,8 +222,6 @@ line-height: 1.4;
 
 </ul>
 
-=======
->>>>>>> d3f18a5ef1a20ae9475931aa33b0dcd9614306c1
 <section class='container'>
           <hgroup>
             <h1>Welcome to your PHP application on OpenShift</h1>
