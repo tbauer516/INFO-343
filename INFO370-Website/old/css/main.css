@@ -1,0 +1,82 @@
+.color-primary-0 { color: #FA7600 }	/* Main Primary color (orange) */
+.color-primary-1 { color: #FFAA5E }
+.color-primary-2 { color: #FF9333 }
+.color-primary-3 { color: #C45D00 }
+.color-primary-4 { color: #9A4800 }
+
+.color-complement-0 { color: #028B98 }	/* Main Complement (light blue) */
+.color-complement-1 { color: #44AAB4 }
+.color-complement-2 { color: #2298A4 }
+.color-complement-3 { color: #016D77 }
+.color-complement-4 { color: #01565E }
+
+/*
+XS 	<576px
+SM 	≥576px
+MD 	≥768px
+LG 	≥992px
+XL	≥1200px
+*/
+
+.abstract {
+	margin-top: 15px;
+}
+
+.authors {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+body {
+	background-color: #89BEDE;
+}
+
+.header {
+	background-color: #F38117;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header > div:nth-child(1) > div > h1{
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+.header > div:nth-child(1) > div {
+	text-align: left;
+}
+
+img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-content {
+	background-color: white;
+	padding-top: 15px;
+}
+
+.text-bottom {
+	position: relative;
+	bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+
+	.header > div:nth-child(1) > div > h1 {
+		font-size: 2.5rem;
+	}
+
+	.header > div:nth-child(1) > div:nth-child(2) {
+		text-align: right;
+	}
+
+}

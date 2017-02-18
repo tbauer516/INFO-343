@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- viewport declaration for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" sizes="32x32">
+
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.ico"/>
+
+    <!-- page information -->
+    <meta name="description" content="INFO 370 Intro to Datascience project webpage.">
+    <meta name="author" content="Tyler Bauer, Eric Riner, Tin Ho, Ashlyn Opgrande">
+    <title>INFO 370: Intro to Datascience</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+    <!-- jQuery library -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+
+    <!-- your stylesheet -->
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="header row">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <h1>Statistical Modeling of 911 Call Data</h1>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <h1>INFO 370: Introduction to Data Science</h1>
+                </div>
+            </div>
+            <div class="row authors">
+                <div class="col-xs-12">
+                    <p>By: Ashlyn Opgrande, Eric Riner, Tin Ho, Tyler Bauer</p>
+                </div>
+            </div>
+        </div>
+        <div class="container main-content">
+            <!-- <div class="img-wrapper">
+                <img src="assets/heatmap.png" alt="Heatmap of Crimes and Time of Day Per Month" />
+            </div> -->
+            <div class="abstract">
+                <h1>Abstract</h1>
+                <p>Our project consists of taking a mass amount of 911 Call Data (reported by the city police department) and correlating the types and frequency of incidents with weather patterns. This correlation is to see how weather may impact criminal activity in the city of Seattle on any given day. Others have completed similar questions and analyses, but for other small city areas around the United States, such as Chicago or New York. We are the first group to use the city of Seattle’s own data to determine how our unique weather patterns in the Pacific Northwest impact criminals. In order to solve our question, we gathered 911 report data from the city of Seattle’s online database that is updated in real time and weather data from Weather Underground in order to build linear regression models in order to draw correlation between the two data sets. These regression models were done in a quasi-experimental manner where we ran tests in an experimental fashion, but had data that was previously collected. We sorted the data into crime by months, as well as weather, and then ran regression models in order to determine if any correlations could be drawn. Our correlations conclude that during certain weather events (and by relation, certain months of the year in Seattle) citizens should be more cautious of their well being and property as they are at an increased risk of becoming a victim of a criminal incident.</p>
+            </div>
+            <div class='tableauPlaceholder' id='viz1480998976511' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='CRIME RATES IN SEATTLE ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;LA&#47;LASTTIME&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='LASTTIME&#47;Dashboard1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;LA&#47;LASTTIME&#47;Dashboard1&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                </object>
+            </div>
+            <div class="fullscreen-tip">
+                <p>Go full screen for the best interactive experience!</p>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1480998976511');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

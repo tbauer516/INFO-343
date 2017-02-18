@@ -1,0 +1,91 @@
+.color-black { color: #0E0F0F; }
+.color-dark-gray { color: #383838; }
+.color-light-gray { color: #4D4D4D; }
+.color-white { color: #F7F7F7; }
+.color-salmon { color: #E15759; }
+
+/*
+XS 	<576px
+SM 	≥576px
+MD 	≥768px
+LG 	≥992px
+XL	≥1200px
+*/
+
+.abstract {
+	margin-top: 15px;
+	color: #F7F7F7;
+}
+
+.authors {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+body {
+	background-color: #383838;
+}
+
+.container {
+	width: 85%;
+	max-width: 85%;
+}
+
+.fullscreen-tip {
+	text-align: right;
+	color: #F7F7F7;
+}
+
+.header {
+	background-color: #0E0F0F;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header > div:nth-child(1) > div > h1{
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+.header > div:nth-child(1) > div {
+	text-align: left;
+}
+
+.header h1, .header p {
+	color: #E15759;
+}
+
+img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-content {
+	background-color: #4D4D4D;
+	padding-top: 15px;
+}
+
+.text-bottom {
+	position: relative;
+	bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+
+	.header > div:nth-child(1) > div > h1 {
+		font-size: 2.5rem;
+	}
+
+	.header > div:nth-child(1) > div:nth-child(2) {
+		text-align: right;
+	}
+
+}

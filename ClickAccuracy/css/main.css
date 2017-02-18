@@ -1,0 +1,32 @@
+body {
+	background-color: gray;
+}
+
+canvas {
+	background-color: white;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.hide {
+	display: none;
+}
+
+.line {
+	fill: none;
+	stroke: black;
+	stroke-width: 3px;
+}
+
+.chart {
+	margin: 5px 5px 5px 5px;
+	background-color: white;
+}
+
+.chart-outside {
+	padding: 0px;
+}
+
+.modal-footer {
+	margin-top: 15px;
+}
